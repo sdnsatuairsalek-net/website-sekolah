@@ -80,7 +80,7 @@ if (!schoolNameCheck) {
 }
 const heroImageCheck = db.prepare("SELECT * FROM settings WHERE key = 'hero_image'").get();
 if (!heroImageCheck) {
-  db.prepare("INSERT INTO settings (key, value) VALUES (?, ?)").run('hero_image', 'https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  db.prepare("INSERT INTO settings (key, value) VALUES (?, ?)").run('hero_image', 'https://images.unsplash.com/photo-1780696925338-4a6ff9a593b2?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 const visiCheck = db.prepare("SELECT * FROM settings WHERE key = 'visi'").get();
 if (!visiCheck) {
@@ -141,17 +141,17 @@ if (statsCheck.count === 0) {
 const teacherCheck = db.prepare('SELECT count(*) as count FROM teachers').get() as { count: number };
 if (teacherCheck.count === 0) {
   const insertTeacher = db.prepare('INSERT INTO teachers (name, position, photoUrl) VALUES (?, ?, ?)');
-  insertTeacher.run('Budi Santoso', 'Kepala Sekolah', '/uploads/placeholder-teacher.svg');
-  insertTeacher.run('Siti Aminah', 'Guru Matematika', '/uploads/placeholder-teacher.svg');
-  insertTeacher.run('Ahmad Rizki', 'Guru Olahraga', '/uploads/placeholder-teacher.svg');
+  insertTeacher.run('Erwin Sutrisno, S.Pd', 'Kepala Sekolah', '/uploads/placeholder-teacher.svg');
+  insertTeacher.run('Ahmad Khoirudin', 'Operator Sekolah', '/uploads/placeholder-teacher.svg');
+  insertTeacher.run('Veronika', 'Staf Tata Usaha', '/uploads/placeholder-teacher.svg');
 }
 
 const articleCheck = db.prepare('SELECT count(*) as count FROM articles').get() as { count: number };
 if (articleCheck.count === 0) {
   const insertArticle = db.prepare('INSERT INTO articles (title, content, imageUrl, date, author) VALUES (?, ?, ?, ?, ?)');
   insertArticle.run(
-    'Penerimaan Siswa Baru 2024',
-    'SD Harapan Bangsa membuka pendaftaran siswa baru untuk tahun ajaran 2024/2025. Segera daftarkan putra-putri Anda!',
+    'Penerimaan Siswa Baru 2026',
+    'SDN1 Air Salek membuka pendaftaran siswa baru untuk tahun ajaran 2026/2027. Segera daftarkan putra-putri Anda!',
     '/uploads/placeholder-news.svg',
     new Date().toISOString().split('T')[0],
     'Admin'
