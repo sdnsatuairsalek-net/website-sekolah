@@ -583,7 +583,7 @@ const Footer = ({
           <h4 className="text-lg font-bold text-white mb-6">Lokasi</h4>
           <div className="rounded-xl overflow-hidden h-48 bg-gray-800">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.051862547671!2d106.82496467499066!3d-6.256900693731603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3d32924483d%3A0x74d587057c20a363!2sSekolah%20Dasar%20Negeri%20Pela%20Mampang%2009%20Pagi!5e0!3m2!1sid!2sid!4v1709823456789!5m2!1sid!2sid" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.28721444142!2d104.9581284739644!3d-2.7308904972463828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b616be603fc7d%3A0xec2e48d5c83a16e5!2sSDN%201%20AIR%20SALEK!5e0!3m2!1sid!2sid!4v1780862317521!5m2!1sid!2sid" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
